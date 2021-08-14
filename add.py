@@ -1,7 +1,7 @@
 '''
-=============SON OF GENISYS=====================
-Astra members adding script
-Coded by a dumbass kid- github.com/Cryptonian007
+=============SON OF GOD=====================
+REX 1.0 members adding script
+Coded by REX - @krish775
 Apologies if anything in the code is dumb :)
 Copy with credits
 ************************************************
@@ -45,12 +45,23 @@ minus = w + '[' + lg + '-' + w + ']' + rs
 def banner():
     # fancy logo
     b = [
-    '   _____             __',
-    '  /  _  \    _______/  |_____________',
-    ' /  /_\  \  /  ___/\   __\_  __ \__  \\',
-    '/    |    \ \___ \  |  |  |  | \// __ \_',
-    '\____|__  /____  >  |__|  |__|  (____   /',
-    '        \/     \/                     \/'
+    
+
+  _____  ________   __  __   ___  
+
+ |  __ \|  ____\ \ / / /_ | / _ \ 
+
+ | |__) | |__   \ V /   | || | | |
+
+ |  _  /|  __|   > <    | || | | |
+
+ | | \ \| |____ / . \   | || |_| |
+
+ |_|  \_\______/_/ \_\  |_(_)___/ 
+
+                                  
+
+                                  
     ]
     for char in b:
         print(f'{random.choice(colors)}{char}{rs}')
