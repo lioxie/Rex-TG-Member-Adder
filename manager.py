@@ -24,17 +24,28 @@ def banner():
     import random
     # fancy logo
     b = [
-    '   _____             __',
-    '  /  _  \    _______/  |_____________',
-    ' /  /_\  \  /  ___/\   __\_  __ \__  \\',
-    '/    |    \ \___ \  |  |  |  | \// __ \_',
-    '\____|__  /____  >  |__|  |__|  (____   /',
-    '        \/     \/                     \/'
+    
+
+  _____  ________   __  __   ___  
+
+ |  __ \|  ____\ \ / / /_ | / _ \ 
+
+ | |__) | |__   \ V /   | || | | |
+
+ |  _  /|  __|   > <    | || | | |
+
+ | | \ \| |____ / . \   | || |_| |
+
+ |_|  \_\______/_/ \_\  |_(_)___/ 
+
+                                  
+
+                                  
     ]
     for char in b:
         print(f'{random.choice(colors)}{char}{n}')
-    #print('=============SON OF GENISYS==============')
-    print(f'   Version: 1.2 | Author: Cryptonian{n}\n')
+    #print('=============SON OF GOD==============')
+    print(f'   Version: 1.0 | Author: REX{n}\n')
 
 def clr():
     if os.name == 'nt':
@@ -45,12 +56,12 @@ def clr():
 while True:
     clr()
     banner()
-    print(lg+'[1] Add new accounts'+n)
-    print(lg+'[2] Filter all banned accounts'+n)
-    print(lg+'[3] Delete specific accounts'+n)
-    print(lg+'[4] Update your Astra'+n)
-    print(lg+'[5] Quit'+n)
-    a = int(input('\nEnter your choice: '))
+    print(lg+'[1] 𝔸𝕕𝕕 𝕟𝕖𝕨 𝕒𝕔𝕔𝕠𝕦𝕟𝕥𝕤'+n)
+    print(lg+'[2] 𝔽𝕚𝕝𝕥𝕖𝕣 𝕒𝕝𝕝 𝕓𝕒𝕟𝕟𝕖𝕕 𝕒𝕔𝕔𝕠𝕦𝕟𝕥𝕤'+n)
+    print(lg+'[3] 𝔻𝕖𝕝𝕖𝕥𝕖 𝕤𝕡𝕖𝕔𝕚𝕗𝕚𝕔 𝕒𝕔𝕔𝕠𝕦𝕟𝕥𝕤'+n)
+    print(lg+'[4] 𝕌𝕡𝕕𝕒𝕥𝕖 𝕪𝕠𝕦𝕣 ℝ𝔼𝕏 𝕋𝕠𝕠𝕝𝕤'+n)
+    print(lg+'[5] ℚ𝕦𝕚𝕥'+n)
+    a = int(input('\nєитєя уσυя ¢нσι¢є: '))
     if a == 1:
         new_accs = []
         with open('vars.txt', 'ab') as g:
@@ -66,7 +77,7 @@ while True:
             for number in new_accs:
                 c = TelegramClient(f'sessions/{number}', 3910389 , '86f861352f0ab76a251866059a6adbd6')
                 c.start(number)
-                print(f'{lg}[+] Login successful')
+                print(f'{lg}[+] 𝐋𝐨𝐠𝐢𝐧 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮L')
                 c.disconnect()
             input(f'\n Press enter to goto main menu...')
 
@@ -140,28 +151,28 @@ while True:
         input(f'\nPress enter to goto main menu...')
         f.close()
     elif a == 4:
-        # thanks to github.com/th3unkn0n for the snippet below
+        # thanks to github.com/krish775 for the snippet below
         print(f'\n{lg}[i] Checking for updates...')
         try:
-            # https://raw.githubusercontent.com/Cryptonian007/Astra/main/version.txt
-            version = requests.get('https://raw.githubusercontent.com/Cryptonian007/Astra/main/version.txt')
+            # https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/version.txt
+            version = requests.get('https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/version.txt')
         except:
             print(f'{r} You are not connected to the internet')
             print(f'{r} Please connect to the internet and retry')
             exit()
-        if float(version.text) > 1.1:
+        if float(version.text) > 0.9:
             prompt = str(input(f'{lg}[~] Update available[Version {version.text}]. Download?[y/n]: {r}'))
             if prompt == 'y' or prompt == 'yes' or prompt == 'Y':
                 print(f'{lg}[i] Downloading updates...')
                 if os.name == 'nt':
-                    os.system('del add.py')
-                    os.system('del manager.py')
+                    os.system('del rexadder.py')
+                    os.system('del rexmanager.py')
                 else:
-                    os.system('rm add.py')
-                    os.system('rm manager.py')
+                    os.system('rm rexadd.py')
+                    os.system('rm rexmanager.py')
                 #os.system('del scraper.py')
-                os.system('curl -l -O https://raw.githubusercontent.com/Cryptonian007/Astra/main/add.py')
-                os.system('curl -l -O https://raw.githubusercontent.com/Cryptonian007/Astra/main/manager.py')
+                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/rexadder.py')
+                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/rexmanager.py')
                 print(f'{lg}[*] Updated to version: {version.text}')
                 input('Press enter to exit...')
                 exit()
