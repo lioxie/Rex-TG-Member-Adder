@@ -12,7 +12,7 @@ r = Fore.RED
 w = Fore.WHITE
 cy = Fore.CYAN
 ye = Fore.YELLOW
-gr = Fore.Green
+gr = Fore.GREEN
 colors = [lg, r, w, cy, ye, gr]
 
 try:
