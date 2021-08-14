@@ -22,7 +22,7 @@ Now we need to add members to a group
 
 So launch in terminal
 
-> python add.py
+> python rexadder.py
 
 Enter group link you wanna scrape users from
 It can be a private link or a public link
@@ -37,7 +37,7 @@ https://t.me/joinchat/hash
 
 ***** Note *****
 
-If you have scraped from a group before, Astra remembers it and it'll ask you whether to scrape 
+If you have scraped from a group before, REX 1.0 remembers it and it'll ask you whether to scrape 
 from the same group or not. Enter y for yes and n for no and proceed
 ****************
 
@@ -53,7 +53,7 @@ Then you need to enter delay time per request
 
 What is it?
 
-It is the amount of time Astra will wait before adding the next user
+It is the amount of time REX 1.0 will wait before adding the next user
 
 Output is
 *********
@@ -64,7 +64,7 @@ Waits for some seconds
 Adds another guy to the same group
 
 
-==If you want rapid adding, then you can set the delay time to 0 It means Astra won't wait while adding users
+==If you want rapid adding, then you can set the delay time to 0 It means REX 1.0 won't wait while adding users
 But chances of getting peer flood error from Telegram is more==
 
 
@@ -72,7 +72,7 @@ Recommended delays are
 
 5 secs, 10secs, 15secs, 20secs or 60 secs if u want, but it is damn slow XD
 
-Then, sit back and watch Astra adding members
+Then, sit back and watch REX 1.0 adding members
 
 
 
