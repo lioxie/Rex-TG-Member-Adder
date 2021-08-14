@@ -48,12 +48,12 @@ def clr():
 while True:
     clr()
     banner()
-    print(lg+'[1] 𝔸𝕕𝕕 𝕟𝕖𝕨 𝕒𝕔𝕔𝕠𝕦𝕟𝕥𝕤'+n)
-    print(lg+'[2] 𝔽𝕚𝕝𝕥𝕖𝕣 𝕒𝕝𝕝 𝕓𝕒𝕟𝕟𝕖𝕕 𝕒𝕔𝕔𝕠𝕦𝕟𝕥𝕤'+n)
-    print(lg+'[3] 𝔻𝕖𝕝𝕖𝕥𝕖 𝕤𝕡𝕖𝕔𝕚𝕗𝕚𝕔 𝕒𝕔𝕔𝕠𝕦𝕟𝕥𝕤'+n)
-    print(lg+'[4] 𝕌𝕡𝕕𝕒𝕥𝕖 𝕪𝕠𝕦𝕣 ℝ𝔼𝕏 𝕋𝕠𝕠𝕝𝕤'+n)
-    print(lg+'[5] ℚ𝕦𝕚𝕥'+n)
-    a = int(input('\nєитєя уσυя ¢нσι¢є: '))
+    print(lg+'[1] Add New Accounts'+n)
+    print(lg+'[2] Filter All Banned Accounts'+n)
+    print(lg+'[3] Delete specific accounts'+n)
+    print(lg+'[4] Update your REX Tools'+n)
+    print(lg+'[5] Quit'+n)
+    a = int(input('\nEnter Your Choice: '))
     if a == 1:
         new_accs = []
         with open('vars.txt', 'ab') as g:
