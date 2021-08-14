@@ -7,7 +7,7 @@ from time import sleep
 init()
 
 n = Fore.RESET
-lg = Fore.LIGHTGREEN_EX
+lg = Fore.BLUE
 r = Fore.RED
 w = Fore.WHITE
 cy = Fore.CYAN
