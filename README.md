@@ -1,7 +1,7 @@
-# Rex 1.0
+# 🇷‌🇪‌🇽‌ 1.0
 <p align='center'><b>Cross Platform Telegram Members Scraping and Adding Toolkit</b></p>
 
-# Usage 🧰
+# 🇺‌🇸‌🇦‌🇬‌🇪‌ 👨‍🔧
 
 * You need to install requirements first - `pip install -r requirements.txt`
 * Then you need to store your accounts using `manager.py`
@@ -9,7 +9,7 @@
 
 <b> For full tutorial, refer to <a href='https://github.com/krish775/Rex-TG-Member-Adder/blob/main/how_to_use.txt'>how_to_use.txt</a> </b>
 
-# Features ♨️
+# 🇫‌🇪‌🇦‌🇹‌🇺‌🇷‌🇪‌🇸‌ 🔥
 
 * No need of API Id and API hash- It requires only phone numbers
 * Adds 60 members on an average
