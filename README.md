@@ -1,4 +1,4 @@
-# Astra 1.2
+# Rex 1.0
 <p align='center'><b>Cross Platform Telegram Members Scraping and Adding Toolkit</b></p>
 
 # Usage 🧰
