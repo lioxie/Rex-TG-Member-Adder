@@ -20,5 +20,5 @@
 * Scrapes members from private/public groups
 * Cross platform- Works in Android[Termux], Linux, Windows, etc
 
-# Screenshot 📷
+# 🇸‌🇨‌🇷‌🇪‌🇪‌🇳‌🇸‌🇭‌🇴‌🇹‌ 📷
 <p align='center'><img src='https://github.com/Cryptonian007/Astra/blob/main/img/img1.jpg' width='327' height='368.5'></p>
