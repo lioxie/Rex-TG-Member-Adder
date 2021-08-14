@@ -1,11 +1,11 @@
-==How to use Astra==[simple guide]
+==How to use REX 1.0==[simple guide]
 
-for issues, visit our Telegram group- telegram.me/Techmedies_Hub
+for issues, Contact me at Telegram - @GodRex2
 
-first you need to store accounts for scraping and adding purposes in manager.py
+first you need to store accounts for scraping and adding purposes in rexmanager.py
 So launch in terminal
 
-> python manager.py
+> python rexmanager.py
 
 --To add new accounts, choose 1
 Then enter number of accounts you wanna add
