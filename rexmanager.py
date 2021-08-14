@@ -24,9 +24,9 @@ def banner():
     import random
     # fancy logo
     b = [
-    
 
-  _____  ________   __  __   ___  
+
+
 
  |  __ \|  ____\ \ / / /_ | / _ \ 
 
