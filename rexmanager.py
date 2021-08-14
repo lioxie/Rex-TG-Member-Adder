@@ -12,7 +12,8 @@ r = Fore.RED
 w = Fore.WHITE
 cy = Fore.CYAN
 ye = Fore.YELLOW
-colors = [lg, r, w, cy, ye]
+gr = Fore.Green
+colors = [lg, r, w, cy, ye, gr]
 
 try:
     import requests
@@ -57,19 +58,19 @@ while True:
     if a == 1:
         new_accs = []
         with open('vars.txt', 'ab') as g:
-            number_to_add = int(input(f'\n{lg} [~] Enter number of accounts to add: {r}'))
+            number_to_add = int(input(f'\n{gr} [~] Enter number of accounts to add: {r}'))
             for i in range(number_to_add):
-                phone_number = str(input(f'\n{lg} [~] Enter Phone Number: {r}'))
+                phone_number = str(input(f'\n{ye} [~] Enter Phone Number: {r}'))
                 parsed_number = ''.join(phone_number.split())
                 pickle.dump([parsed_number], g)
                 new_accs.append(parsed_number)
-            print(f'\n{lg} [i] Saved all accounts in vars.txt')
+            print(f'\n{cy} [i] Saved all accounts in vars.txt')
             clr()
-            print(f'\n{lg} [*] Logging in from new accounts\n')
+            print(f'\n{gr} [*] Logging in from new accounts\n')
             for number in new_accs:
                 c = TelegramClient(f'sessions/{number}', 3910389 , '86f861352f0ab76a251866059a6adbd6')
                 c.start(number)
-                print(f'{lg}[+] 𝐋𝐨𝐠𝐢𝐧 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮L')
+                print(f'{ye}[+] 𝐋𝐨𝐠𝐢𝐧 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮L')
                 c.disconnect()
             input(f'\n Press enter to goto main menu...')
 
@@ -96,7 +97,7 @@ while True:
                     try:
                         client.send_code_request(phone)
                         #client.sign_in(phone, input('[+] Enter the code: '))
-                        print(f'{lg}[+] {phone} is not banned{n}')
+                        print(f'{blue}[+] {phone} is not banned{n}')
                     except PhoneNumberBannedError:
                         print(r+str(phone) + ' is banned!'+n)
                         banned_accs.append(account)
@@ -124,7 +125,7 @@ while True:
                 break
         f.close()
         i = 0
-        print(f'{lg}[i] Choose an account to delete\n')
+        print(f'{ye}[i] Choose an account to delete\n')
         for acc in accs:
             print(f'{lg}[{i}] {acc[0]}{n}')
             i += 1
@@ -165,7 +166,7 @@ while True:
                 #os.system('del scraper.py')
                 os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/rexadder.py')
                 os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/rexmanager.py')
-                print(f'{lg}[*] Updated to version: {version.text}')
+                print(f'{gr}[*] Updated to version: {version.text}')
                 input('Press enter to exit...')
                 exit()
             else:
