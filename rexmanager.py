@@ -91,7 +91,7 @@ while True:
         else:
             for account in accounts:
                 phone = str(account[0])
-                client = TelegramClient(f'sessions/{phone}', 3910389 , '86f861352f0ab76a251866059a6adbd6')
+                client = TelegramClient(f'sessions/{phone}', 8088717 , '7d1e0295ee1c2628f1933e9ffd2d8b78')
                 client.connect()
                 if not client.is_user_authorized():
                     try:
