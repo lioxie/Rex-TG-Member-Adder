@@ -161,7 +161,7 @@ while True:
                     os.system('del rexadder.py')
                     os.system('del rexmanager.py')
                 else:
-                    os.system('rm rexadd.py')
+                    os.system('rm rexadder.py')
                     os.system('rm rexmanager.py')
                 #os.system('del scraper.py')
                 os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/rexadder.py')
