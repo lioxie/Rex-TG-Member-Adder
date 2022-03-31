@@ -207,7 +207,7 @@ for acc in to_use:
     #c.get_dialogs()
     try:
         members = []
-        members = c.get_participants(scraped_grp_entity, aggressive=True)
+        members = c.get_participants(scraped_grp_entity, aggressive=False)
     except Exception as e:
         print(f'{error}{r} Couldn\'t scrape members')
         print(f'{error}{r} {e}')
